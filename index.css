@@ -28,7 +28,7 @@ img {
 }
 
 #img {
-    animation: zoom 2.5s linear infinite 
+    animation: zoom 2s linear infinite 
 }
 
 @keyframes zoom {
