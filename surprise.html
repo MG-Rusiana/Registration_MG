@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="surprise.css">
+</head>
+<body onload="slider()">
+    <div class="main">
+        <audio controls autoplay preload="auto" style="display: none;">
+            <source src="senpai.mp3" type="audio/mpeg" >
+          Your browser does not support the audio element.
+        </audio>
+            
+        <div class="slider">
+            <img src="ooof/1.jpg" width="300" 
+            height="400" center id="img">
+        </div>
+    </div>
+    
+    <script>
+        var slides = document.getElementById("img");
+
+        var images = new Array(
+            "ooof/1.jpg",
+            "ooof/2.jpeg",
+            "ooof/3.jpeg",
+            "ooof/4.jpg",
+            "ooof/5.jpeg",
+            "ooof/6.jpg",
+            "ooof/7.jpg",
+            "ooof/8.jpg",
+            "ooof/9.jpg",
+            "ooof/10.jpg",
+            "ooof/11.jpg",
+            "ooof/12.jpg",
+            "ooof/13.jpeg",
+            "ooof/14.jpeg",
+            "ooof/15.jpeg",
+            "ooof/16.jpg",
+            "ooof/17.jpg",
+            "ooof/18.jpeg",
+            "ooof/19.jpeg",
+            "ooof/20.jpeg",
+            "ooof/21.jpeg",
+            "ooof/22.jpg",
+            "ooof/23.jpeg",
+            "ooof/24.jpeg",
+            "ooof/25.jpeg",
+            "ooof/26.jpeg",
+            "ooof/27.jpeg",
+            "ooof/28.jpeg",
+            "ooof/29.jpg",
+            "ooof/30.jpg",
+            "ooof/31.jpeg",
+            "ooof/32.jpeg",
+            "ooof/33.jpeg",
+            "ooof/34.jpeg",
+            "ooof/35.jpeg",
+            "ooof/36.jpg",
+        );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            img.src = images[i];
+            i++
+            setTimeout('slider()', 3000)
+        }
+    </script>
+</body>
+</html>
