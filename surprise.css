@@ -12,6 +12,34 @@
     background-size: cover;
 }
 
+.headerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greet {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230%;
+    height: 60px;
+    animation: scrollText 10s infinite linear;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+
 .slider {
     height: 100vh;
     width: 100%;
@@ -19,9 +47,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -70px;
 }
 
 img {
+    margin-top: -110px;
     border-radius: 1%;
     max-width: fit-content;
     min-width: fit-content;
